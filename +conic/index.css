@@ -1,0 +1,280 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.i {
+  color: transparent;
+}
+
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 1rem;
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  
+
+/* FONTS INTEGRATION */
+
+@font-face {
+  font-family: profile;
+  src: url(../Fonts/estherilla/estherilla.otf);
+}
+
+@font-face {
+  font-family: premium;
+  src: url(../Fonts/Caghen_Demo/Caghen_Demo.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../Fonts/Poppins-1/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: wensly;
+  src: url(../Fonts/wensley-font/WensleyDemo-z8gll.ttf);
+}
+@font-face {
+  font-family: maaz;
+  src: url(../Fonts/MaazFont/maaz-regulardemo.otf);
+}
+@font-face {
+  font-family: evafiya;
+  src: url(../Fonts/Evafiya-Font/Evafiya.ttf);
+}
+@font-face {
+  font-family: sulphur;
+  src: url(../Fonts/sulphurpoint/SulphurPoint-Bold.otf);
+}
+@font-face {
+  font-family: citrica;
+  src: url(../Fonts/citrica/Citrica/Citrica-Regular.ttf);
+}
+@font-face {
+  font-family: alata;
+  src: url(../Fonts/alata/fonts/Alata-Regular.ttf);
+}
+@font-face {
+  font-family: athene;
+  src: url(../Fonts/atheneff/AtheneFF/Athene.otf);
+}
+@font-face {
+  font-family: newasia;
+  src: url(../Fonts/newnesia/Newnesia.ttf);
+}
+
+/* FONT SIZE CONFIGRATION */
+
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  /* background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px); */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 6.5rem;
+}
+
+.leftnav {
+  width: 50%;
+}
+
+.leftnav h2 {
+  color: gainsboro;
+  font-size: 4rem;
+  margin-left: 6rem;
+  margin-top: 0.5rem;
+  font-family: athene;
+}
+
+.rightnav {
+  width: 50%;
+}
+
+.rightnav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 8rem;
+}
+
+.rightnav ul li {
+  text-decoration: none;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.rightnav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: maaz;
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 100vh;
+  background: url(./Images/heroback.jpg) fixed;
+  filter: grayscale(70%);
+  background-size: cover;
+}
+
+.hero h1 {
+  color: beige;
+  font-size: 1.8rem;
+  font-family: "athene";
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-top: 8rem;
+  font-weight: 100;
+}
+
+.hero h1 span {
+  font-size: 12rem;
+  font-family: "poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-style: initial;
+  font-weight: 900;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+  font-family: "maaz";
+  font-style: inherit;
+  letter-spacing: 0.7rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+.view {
+  height: 5.5rem;
+  width: 21rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "maaz";
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 0.1rem solid #fff;
+  margin-left: 39rem;
+  margin-top: 6.5rem;
+  transition: 0.3s;
+}
+
+.view:hover {
+  background: #fff;
+  color: #000;
+}
+
+.about {
+  height: 5.5rem;
+  width: 21rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "maaz";
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: 0.1rem solid #fff;
+  margin-left: 6rem;
+  margin-top: 6.5rem;
+  transition: 0.3s;
+}
+
+.about:hover {
+  background: transparent;
+  border: 0.1rem solid #fff;
+  color: #fff;
+}
+
+/* CLOTHING SECTION */
+
+.clothing {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)),
+    url(./Images/clothingback.jpg) fixed;
+  background-size: cover;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: maaz;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  margin-top: 27rem;
+}
+
+.explore {
+  height: 5.5rem;
+  width: 28rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "maaz";
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 0.1rem solid #fff;
+  margin-top: 5rem;
+  transition: 0.3s;
+}
+
+.explore:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* WATCHES SECTION */
+
+.watches {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)),
+    url(./Images/watchback.jpg) fixed;
+  background-size: cover;
+}
+
+/* PERFUMES SECTION */
+
+.perfumes {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)),
+    url(./Images/perfumeback.jpg) fixed;
+  background-size: cover;
+}
+
+/* SHOES SECTION */
+
+.shoes {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)),
+    url(./Images/shoesback.jpg) fixed;
+  background-size: cover;
+}
